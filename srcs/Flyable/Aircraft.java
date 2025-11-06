@@ -18,6 +18,6 @@ public class Aircraft extends Flyable
 	@Override
 	public void updateConditions()
 	{
-		//exception
+		throw new UnsupportedOperationException("Exception: updateConditions() only can be use by derived class.");
 	}
 }

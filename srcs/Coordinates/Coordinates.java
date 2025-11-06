@@ -4,11 +4,16 @@ public class Coordinates
 {
 	private int longitude, latitute, height;
 
-	private Coordinates(int p_longitude, int p_latitude, int height)
+	Coordinates(int p_longitude, int p_latitude, int height)
 	{
 		this.longitude = p_longitude;
 		this.latitute = p_latitude;
 		this.height = height;
+	}
+
+	public static Coordinates setCoordinates(int lon, int lat, int height)
+	{
+		return new Coordinates(lon, lat, height);
 	}
 
 	public int getLongitude()

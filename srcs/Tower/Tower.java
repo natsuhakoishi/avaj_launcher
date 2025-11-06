@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Tower
 {
-	private List<Flyable> observers;
+	private List<Flyable> observers = new ArrayList<>();
 
 	public void register(Flyable p_flyable)
 	{
@@ -15,6 +15,11 @@ public class Tower
 	public void unregister(Flyable p_flybale)
 	{
 		this.observers.remove(p_flybale);
+	}
+
+	public int getObserversSize()
+	{
+		return (this.observers.size());
 	}
 
 	protected void conditionChanged()

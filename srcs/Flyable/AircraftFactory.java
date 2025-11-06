@@ -1,6 +1,7 @@
 package srcs.Flyable;
 
 import srcs.Coordinates.*;
+import srcs.Exception.*;
 
 public class AircraftFactory
 {
@@ -14,18 +15,21 @@ public class AircraftFactory
 		return (af);
 	}
 
-	public Flyable newAircraft(String p_type, String p_name, Coordinates p_coordinates)
+	public Flyable newAircraft(String p_type, String p_name, Coordinates p_coordinates) throws InvalidFileContentException
 	{
 		switch (p_type)
 		{
 			case ("Helicopter"):
 				return new Helicopter(id_counter++, p_name, p_coordinates);
+
 			case ("JetPlane"):
 				return new JetPlane(id_counter++, p_name, p_coordinates);
+
 			case ("Baloon"):
 				return new Baloon(id_counter++, p_name, p_coordinates);
+
 			default:
-				//throw error
+				throw new InvalidFileContentException("Invalid p_type: "+p_type);
 		}
 	}
 }
