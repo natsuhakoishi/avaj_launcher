@@ -1,6 +1,0 @@
-Baloon#B1(0): Rain detected. Adjusting altitude to maintain stability.
-Baloon#B1(0) landing.
-JetPlane#J1(1): Snow detected. Activating de-icing protocols.
-JetPlane#J1(1) landing.
-Tower: All Aircraft Landed.
-Simulator: Max runtime reached, simulation terminated.
