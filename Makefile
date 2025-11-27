@@ -5,7 +5,7 @@ compile:
 	javac @sources.txt -d avaj_launcher
 
 run: compile
-	java -cp avaj_launcher com.github.natsuhakoishi.avaj_launcher.Main.Main sources.txt scenario.txt
+	java -cp avaj_launcher com.github.natsuhakoishi.avaj_launcher.Simulator.Simulator sources.txt scenario.txt
 
 clean:
 	rm -rf avaj_launcher
