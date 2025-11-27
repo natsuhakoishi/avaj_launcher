@@ -1,0 +1,16 @@
+package com.github.natsuhakoishi.avaj_launcher.Flyable;
+
+import com.github.natsuhakoishi.avaj_launcher.Tower.*;
+
+public abstract class Flyable
+{
+	protected WeatherTower weatherTower;
+
+	public abstract void updateConditions();
+
+	public void registerTower(WeatherTower p_tower)
+	{
+		this.weatherTower = p_tower;
+		this.weatherTower.register(this);
+	}
+}
