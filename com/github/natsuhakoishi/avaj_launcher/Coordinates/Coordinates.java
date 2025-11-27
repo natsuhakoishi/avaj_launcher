@@ -18,17 +18,17 @@ public class Coordinates
 
 	public int getLongitude()
 	{
-		return this.longitude;
+		return (this.longitude);
 	}
 
 	public int getLatitute()
 	{
-		return this.latitute;
+		return (this.latitute);
 	}
 
 	public int getHeight()
 	{
-		return this.height;
+		return (this.height);
 	}
 
 	public void setLongitude(int lon)
